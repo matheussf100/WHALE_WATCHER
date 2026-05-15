@@ -24,15 +24,6 @@ O pipeline foi desenhado para lidar com **Big Data**, substituindo abordagens tr
 * **Estatística Não-Paramétrica:** Uso da **Correlação de Spearman** (`SciPy`) para provar o impacto direcional de ordens massivas, superando as limitações da correlação de Pearson em amostras com forte presença de *outliers*.
 * **Machine Learning Preditivo:** Treino de um modelo de **Regressão Linear** (`Scikit-Learn`) avaliado via $R^2$ e MSE, para prever a variação financeira com base no volume despejado a mercado.
 
-## 📂 Estrutura do Repositório
-
-├── dados/
-│   ├── dados_iniciais/         # Ficheiro bruto de Tick Data (Binance Vision)
-│   └── dados_processados/      # Ficheiros otimizados em .parquet
-├── notebooks/
-│   └── motor_whale_watcher.ipynb  # Pipeline principal de ETL, EDA e Machine Learning
-└── README.md                   # Documentação do projeto
-
 ## 📈 Resultados e Impacto Estratégico
 
 * **Isolamento de Outliers:** A análise de quartis provou matematicamente que a distribuição de volume não é normal. O motor analítico isolou com sucesso o comportamento institucional (Baleias/Outliers) do ruído de retalho (Sardinhas).
