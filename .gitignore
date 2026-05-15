@@ -1,0 +1,31 @@
+# ==========================================
+# PROJETO WHALE WATCHER - GITIGNORE
+# ==========================================
+
+# 1. Dados e Bases de Big Data (CRÍTICO)
+# Ignoramos os ficheiros pesados para não estourar o limite de 100MB do GitHub
+*.csv
+*.parquet
+*.zip
+dados/dados_iniciais/*
+dados/dados_processados/*
+
+# (Opcional) Forçar o Git a manter as pastas vazias na nuvem para manter a arquitetura
+!dados/dados_iniciais/.gitkeep
+!dados/dados_processados/.gitkeep
+
+# 2. Ambientes Virtuais Python
+venv/
+env/
+.env
+
+# 3. Cache do Jupyter Notebook e Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Ficheiros do Sistema Operativo e IDEs
+.vscode/
+.DS_Store
+Thumbs.db
